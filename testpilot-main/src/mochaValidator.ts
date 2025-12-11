@@ -99,10 +99,11 @@ export class MochaValidator extends TestValidator {
       {
         timeout: 5000,
         killSignal: "SIGKILL",
+        shell: true,
       }
     );
     performance.measure(`duration:${testName}`, `start:${testName}`);
-    const stderr = res.stderr.toString();
+    const stderr = res.stderr ? res.stderr.toString() : "";
     const report = MochaValidator.tryParseReport(reportFile);
 
     // parse test results; this is a bit complicated since Mocha sometimes reports asynchroneous tests
