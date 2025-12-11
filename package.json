@@ -1,0 +1,12 @@
+{
+  "name": "js_code",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "testpilot": "echo 'Run via TestPilot benchmark'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
